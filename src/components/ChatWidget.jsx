@@ -169,7 +169,7 @@ export default function ChatWidget() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full text-white shadow-lg"
+          className="appwrite-launcher fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full text-white shadow-lg"
           style={{
             background:
               "linear-gradient(135deg, rgba(253,54,110,0.98), rgba(240,46,101,0.92))",
@@ -351,6 +351,49 @@ export default function ChatWidget() {
             transform: scale(1);
             opacity: 1;
           }
+        }
+
+        @keyframes appwriteLauncherBounce {
+          0%,
+          100% {
+            transform: translateY(0) scale(1);
+          }
+          15% {
+            transform: translateY(-4px) scale(1.02);
+          }
+          30% {
+            transform: translateY(0) scale(1);
+          }
+          45% {
+            transform: translateY(-2px) scale(1.01);
+          }
+          60% {
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        @keyframes appwriteLauncherPulse {
+          0% {
+            box-shadow: 0 14px 32px rgba(240, 46, 101, 0.22), 0 0 0 0 rgba(253, 54, 110, 0.18);
+          }
+          70% {
+            box-shadow: 0 14px 32px rgba(240, 46, 101, 0.22), 0 0 0 14px rgba(253, 54, 110, 0);
+          }
+          100% {
+            box-shadow: 0 14px 32px rgba(240, 46, 101, 0.22), 0 0 0 0 rgba(253, 54, 110, 0);
+          }
+        }
+
+        .appwrite-launcher {
+          animation:
+            appwriteLauncherBounce 2.8s ease-in-out infinite,
+            appwriteLauncherPulse 2.8s ease-out infinite;
+          transform-origin: center;
+        }
+
+        .appwrite-launcher:hover {
+          animation-play-state: paused;
+          transform: scale(1.06);
         }
 
         .appwrite-typing-dot {

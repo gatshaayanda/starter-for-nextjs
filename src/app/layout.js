@@ -1,3 +1,6 @@
+import ChatWidget from "@/components/ChatWidget";
+import { Analytics } from "@vercel/analytics/next";
+
 export const metadata = {
   title: "Ayanda Gatsha — Why Appwrite",
   description: "A simple one-page Appwrite demo built with Next.js.",
@@ -18,6 +21,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-[#FAFAFB] font-[Inter] text-sm text-[#56565C]">
         {children}
+          <ChatWidget />
+              <Analytics />
       </body>
     </html>
   );

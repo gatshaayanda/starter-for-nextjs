@@ -68,7 +68,7 @@ const tone = {
   ],
   docs: [
     `The official documentation is here: ${LINKS.docs}`,
-    `Best next step: read the docs here → ${LINKS.docs}`,
+    `Best next step: read the docs here -> ${LINKS.docs}`,
   ],
   console: [
     `You can open the Appwrite console here: ${LINKS.console}`,
@@ -225,7 +225,7 @@ export async function POST(req) {
 
   const intent = detectIntent(text);
   if (intent) {
-    return NextResponse.json(intent.respond(text));
+    return NextResponse.json(intent.respond());
   }
 
   return NextResponse.json(

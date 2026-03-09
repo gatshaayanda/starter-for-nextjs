@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Appwrite + Next.js",
-  description: "Appwrite starter for Next.js",
+  title: "Ayanda Gatsha — Why Appwrite",
+  description: "A simple one-page Appwrite demo built with Next.js.",
 };
 
 export default function RootLayout({ children }) {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" type="image/svg+xml" href="/appwrite.svg" />
       </head>
-      <body className={"bg-[#FAFAFB] font-[Inter] text-sm text-[#56565C]"}>
+      <body className="bg-[#FAFAFB] font-[Inter] text-sm text-[#56565C]">
         {children}
       </body>
     </html>

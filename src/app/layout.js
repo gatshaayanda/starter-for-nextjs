@@ -1,5 +1,5 @@
-import ChatWidget from "@/components/ChatWidget";
-import AppwriteLoader from "@/components/AppwriteLoader";
+import ChatWidget from "../components/ChatWidget";
+import AppwriteLoader from "../components/AppwriteLoader";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {

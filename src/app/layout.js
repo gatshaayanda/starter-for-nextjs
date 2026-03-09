@@ -1,4 +1,5 @@
 import ChatWidget from "@/components/ChatWidget";
+import AppwriteLoader from "@/components/AppwriteLoader";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
@@ -20,9 +21,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/svg+xml" href="/appwrite.svg" />
       </head>
       <body className="bg-[#FAFAFB] font-[Inter] text-sm text-[#56565C]">
+        <AppwriteLoader />
         {children}
-          <ChatWidget />
-              <Analytics />
+        <ChatWidget />
+        <Analytics />
       </body>
     </html>
   );

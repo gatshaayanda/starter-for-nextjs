@@ -42,7 +42,7 @@ export default function Home() {
           with that mindset: developer-first, practical, and built for shipping.
         </p>
       </section>
-
+<br></br>
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#FD366E]">
           Ayanda Gatsha • Founder, AdminHub
         </p>

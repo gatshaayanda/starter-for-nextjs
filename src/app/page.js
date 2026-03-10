@@ -28,6 +28,21 @@ export default function Home() {
           </div>
         </div>
 
+
+      <section className="mx-auto mt-16 max-w-4xl rounded-3xl border border-[#FD366E26] bg-white p-8 shadow-sm md:p-10">
+        <h2 className="mb-4 font-[Poppins] text-3xl font-light text-[#2D2D31]">
+          Why Appwrite
+        </h2>
+        <p className="text-base leading-8 text-[#4B4B50] md:text-lg">
+          Appwrite is compelling to me because it brings together the backend
+          layers I care about most - authentication, structured data, storage,
+          functions, realtime capabilities, and site deployment - without making
+          the platform feel unnecessarily abstract. I like tools that help me go
+          from architecture to working product quickly. Appwrite feels aligned
+          with that mindset: developer-first, practical, and built for shipping.
+        </p>
+      </section>
+
         <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#FD366E]">
           Ayanda Gatsha • Founder, AdminHub
         </p>
@@ -111,19 +126,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto mt-16 max-w-4xl rounded-3xl border border-[#FD366E26] bg-white p-8 shadow-sm md:p-10">
-        <h2 className="mb-4 font-[Poppins] text-3xl font-light text-[#2D2D31]">
-          Why Appwrite
-        </h2>
-        <p className="text-base leading-8 text-[#4B4B50] md:text-lg">
-          Appwrite is compelling to me because it brings together the backend
-          layers I care about most - authentication, structured data, storage,
-          functions, realtime capabilities, and site deployment - without making
-          the platform feel unnecessarily abstract. I like tools that help me go
-          from architecture to working product quickly. Appwrite feels aligned
-          with that mindset: developer-first, practical, and built for shipping.
-        </p>
-      </section>
 
       <section className="mx-auto mt-16 grid max-w-5xl gap-6 md:grid-cols-3">
         <div className="rounded-2xl border border-[#EDEDF0] bg-white p-6 shadow-sm">
